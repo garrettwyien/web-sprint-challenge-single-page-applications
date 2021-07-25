@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link , NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
@@ -34,16 +34,22 @@ nav a {
     width: 50%;
     height: 50%;
     color: black;
-    border: solid 3px black;
+    c
+    background-color: white;
     :hover {
     background-color: black;
     color: white;
     transition: .5s;
     }
-}
-nav a.active {
+    :active {
     background-color: black;
     color: white;
+    }
+}
+/* nav a.active {
+    background-color: black;
+    color: white;
+} */
 }
 `
 

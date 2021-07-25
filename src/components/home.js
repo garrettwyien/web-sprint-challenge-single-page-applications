@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link , NavLink} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import img from '../Pizza.jpg';
 import Header from './header';
@@ -9,34 +9,48 @@ display: flex;
 flex-flow: column;
 align-items: center;
 
-header {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-}
 .order-container {
+    display: flex;
+    align-items:center;
+    justify-content:center;
     width: 100%;
 }
 .logo {
-    width: 100%;
+    border: solid 3px black;
+    width: 95%;
     height: 60vh;
     background-image: url(${img});
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.order-container button {
+.order-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
     position: absolute;
     height: 5%;
-    width: 20%;
+    width: 15%;
     left: 40%;
     top: 35%;
     text-align: center;
     font-size: 1.6rem;
+    color: black;
+    background-color: white;
+    border: solid 3px black;
+    :hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+    }
+    :active {
+    background-color: black;
+    color: white;
+    }
+
 }
 `
-
 export default function Home(props) {
     return (
        <div>
@@ -45,10 +59,9 @@ export default function Home(props) {
             <section className='order-container'>
                 <div className='logo'>
                 <Link to={`/pizza/`}>
-                <button>Pizza</button>
+                Pizza!
                 </Link>
-                </div>
-                
+                </div>    
             </section>
         </StyledHome>
        </div> 
