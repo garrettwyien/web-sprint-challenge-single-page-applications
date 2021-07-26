@@ -34,7 +34,6 @@ nav a {
     width: 50%;
     height: 50%;
     color: black;
-    c
     background-color: white;
     :hover {
     background-color: black;
@@ -50,7 +49,6 @@ nav a {
     background-color: black;
     color: white;
 } */
-}
 `
 
 export default function Header(props) {

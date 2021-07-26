@@ -58,7 +58,7 @@ export default function Home(props) {
         <StyledHome>
             <section className='order-container'>
                 <div className='logo'>
-                <Link to={`/pizza/`}>
+                <Link to={`/pizza/`} id='order-pizza'>
                 Pizza!
                 </Link>
                 </div>    
